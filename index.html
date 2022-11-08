@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>🏡 News Homepage</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <!-- TODO: Research how to swap images on breakpoint -->
+        <img
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt="image-web-3-mobile"
+        />
+        <h2>The Bright Future of Web 3.0?</h2>
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button>Read more</button>
+      </section>
+      <section id="new">
+        <h2>New</h2>
+        <article class="news-item">
+          <h3 class="news-heading">Hydrogen VS Electric Cars</h3>
+          <p class="news-description">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <article class="news-item">
+          <h3 class="news-heading">The Downsides of AI Artistry</h3>
+          <p class="news-description">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="news-item">
+          <h3 class="news-heading">Is VC Funding Drying Up?</h3>
+          <p class="news-description">
+            Will hydrogen-fueled Private funding by VC firms is down 50% YOY. We
+            take a look at what that means.
+          </p>
+        </article>
+      </section>
+      <section id="trending">
+        <article class="trending-item">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="retro pcs" />
+          <div class="trending-sub">
+            <p class="trending-number">01</p>
+            <h4 class="trending-header">Reviving Retro PCs</h4>
+            <p class="trending-description">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+        <article class="trending-item">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="top 10 laptops"
+          />
+          <div class="trending-sub">
+            <p class="trending-number">02</p>
+            <h4 class="trending-header">Top 10 Laptops of 2022</h4>
+            <p class="trending-description">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
+        <article class="trending-item">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="top 10 laptops"
+          />
+          <div class="trending-sub">
+            <p class="trending-number">03</p>
+            <h4 class="trending-header">The Growth of Gaming</h4>
+            <p class="trending-description">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/jjvega86">JJ Vega</a>.
+    </footer>
+  </body>
 </html>
