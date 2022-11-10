@@ -15,9 +15,14 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="./assets/images/logo.svg" alt="brand logo" />
-        <ul>
+      <nav class="p-6 flex justify-between">
+        <img class="scale-75" src="./assets/images/logo.svg" alt="brand logo" />
+        <img
+          class="scale-75"
+          src="./assets/images/icon-menu.svg"
+          alt="icon menu"
+        />
+        <ul class="hidden">
           <li>Home</li>
           <li>New</li>
           <li>Popular</li>
@@ -28,12 +33,16 @@
     </header>
     <main>
       <section id="hero">
-        <!-- TODO: Research how to swap images on breakpoint -->
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
-        <img
-          src="./assets/images/image-web-3-mobile.jpg"
-          alt="image-web-3-mobile"
-        />
+        <picture>
+          <source
+            srcset="./assets/images/image-web-3-desktop.jpg"
+            media="(min-width: 800px)"
+          />
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="web 3 desktop"
+          />
+        </picture>
         <h2>The Bright Future of Web 3.0?</h2>
         <p>
           We dive into the next evolution of the web that claims to put the
