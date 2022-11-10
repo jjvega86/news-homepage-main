@@ -10,10 +10,16 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="./css/style.css" rel="stylesheet" />
     <title>🏡 News Homepage</title>
   </head>
-  <body>
+  <body class="font-inter">
     <header>
       <nav class="p-6 flex justify-between">
         <img class="scale-75" src="./assets/images/logo.svg" alt="brand logo" />
@@ -31,25 +37,27 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="mx-5 mt-3">
       <section id="hero">
         <picture>
           <source
             srcset="./assets/images/image-web-3-desktop.jpg"
-            media="(min-width: 800px)"
+            media="(min-width: 724px)"
           />
           <img
             src="./assets/images/image-web-3-mobile.jpg"
             alt="web 3 desktop"
           />
         </picture>
-        <h2>The Bright Future of Web 3.0?</h2>
-        <p>
+        <h2 class="font-bold text-4xl mt-5 w-3/4">
+          The Bright Future of Web 3.0?
+        </h2>
+        <p class="mt-3">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?
         </p>
-        <button>Read more</button>
+        <button class="mt-4">Read more</button>
       </section>
       <section id="new">
         <h2>New</h2>
