@@ -669,6 +669,14 @@ video {
   gap: 0.75rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.self-center {
+  align-self: center;
+}
+
 .border-0 {
   border-width: 0px;
 }
@@ -838,4 +846,18 @@ video {
 .hover\:text-primary-red:hover {
   --tw-text-opacity: 1;
   color: hsl(5 85% 63% / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
 }

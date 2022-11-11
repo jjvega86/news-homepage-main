@@ -24,16 +24,22 @@
       <nav class="p-6 flex justify-between">
         <img class="scale-75" src="./assets/images/logo.svg" alt="brand logo" />
         <img
-          class="scale-75"
+          class="scale-75 sm:hidden"
           src="./assets/images/icon-menu.svg"
           alt="icon menu"
         />
-        <ul class="hidden">
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+        <ul class="hidden sm:flex gap-7 text-neutral-drk-gry-blue self-center">
+          <li class="hover:text-primary-orange cursor-pointer">
+            <a href="#hero">Home</a>
+          </li>
+          <li class="hover:text-primary-orange cursor-pointer">
+            <a href="#new">New</a>
+          </li>
+          <li class="hover:text-primary-orange cursor-pointer">
+            <a href="#popular">Popular</a>
+          </li>
+          <li class="hover:text-primary-orange cursor-pointer">Trending</li>
+          <li class="hover:text-primary-orange cursor-pointer">Categories</li>
         </ul>
       </nav>
     </header>
@@ -103,7 +109,7 @@
           </p>
         </article>
       </section>
-      <section id="trending">
+      <section id="popular">
         <article class="flex mb-6 gap-6">
           <img
             class="max-h-44"
