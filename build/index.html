@@ -19,7 +19,7 @@
     <link href="./css/style.css" rel="stylesheet" />
     <title>🏡 News Homepage</title>
   </head>
-  <body class="font-inter">
+  <body class="font-inter md:mx-12">
     <header>
       <nav class="p-6 flex justify-between">
         <img class="scale-75" src="./assets/images/logo.svg" alt="brand logo" />
@@ -43,8 +43,8 @@
         </ul>
       </nav>
     </header>
-    <main class="mx-5 mt-3">
-      <section id="hero" class="mb-16">
+    <main class="md:grid grid-cols-3 gap-10 mx-5 mt-3">
+      <section id="hero" class="mb-16 col-span-2">
         <picture>
           <source
             srcset="./assets/images/image-web-3-desktop.jpg"
@@ -55,19 +55,23 @@
             alt="web 3 desktop"
           />
         </picture>
-        <h2 class="font-bold text-4xl mt-8 w-3/4">
-          The Bright Future of Web 3.0?
-        </h2>
-        <p class="mt-6 text-neutral-drk-gry-blue font-thin">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button
-          class="mt-8 bg-primary-red text-neutral-white py-3 px-7 tracking-widest font-extralight hover:bg-neutral-vry-drk-blue"
-        >
-          READ MORE
-        </button>
+        <div class="md:flex gap-8">
+          <h2 class="font-bold text-4xl mt-8 w-3/4 md:text-5xl md:w-1/3">
+            The Bright Future of Web 3.0?
+          </h2>
+          <div class="md:flex flex-col p-5 ml-10 md:w-2/3">
+            <p class="mt-6 text-neutral-drk-gry-blue font-thin">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="mt-8 bg-primary-red text-neutral-white py-3 px-7 tracking-widest font-extralight hover:bg-neutral-vry-drk-blue md:w-1/2"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
       </section>
       <section
         id="new"
@@ -109,14 +113,14 @@
           </p>
         </article>
       </section>
-      <section id="popular">
+      <section id="popular" class="col-span-3 flex gap-5">
         <article class="flex mb-6 gap-6">
           <img
             class="max-h-44"
             src="./assets/images/image-retro-pcs.jpg"
             alt="retro pcs"
           />
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 md:justify-evenly">
             <p class="text-3xl text-neutral-gray-blue font-medium">01</p>
             <h4
               class="font-bold text-neutral-vry-drk-blue text-lg hover:text-primary-red cursor-pointer"
@@ -134,7 +138,7 @@
             src="./assets/images/image-top-laptops.jpg"
             alt="top 10 laptops"
           />
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 md:justify-evenly">
             <p class="text-3xl text-neutral-gray-blue font-medium">02</p>
             <h4
               class="font-bold text-neutral-vry-drk-blue text-lg hover:text-primary-red cursor-pointer"
@@ -152,7 +156,7 @@
             src="./assets/images/image-gaming-growth.jpg"
             alt="gaming Growth"
           />
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 md:justify-evenly">
             <p class="text-3xl text-neutral-gray-blue font-medium">03</p>
             <h4
               class="font-bold text-neutral-vry-drk-blue text-lg hover:text-primary-red cursor-pointer"
