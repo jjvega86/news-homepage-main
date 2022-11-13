@@ -24,10 +24,41 @@
       <nav class="p-6 flex justify-between">
         <img class="scale-75" src="./assets/images/logo.svg" alt="brand logo" />
         <img
-          class="scale-75 sm:hidden"
+          id="hamburger-menu"
+          class="scale-75 sm:hidden cursor-pointer"
           src="./assets/images/icon-menu.svg"
           alt="icon menu"
         />
+        <div
+          id="mobile-menu"
+          class="hidden bg-neutral-gray-blue w-full h-screen fixed top-0 left-0 bg-opacity-50 backdrop-blur-sm"
+        >
+          <div class="bg-neutral-white w-2/3 min-h-screen fixed top-0 right-0">
+            <img
+              class="fixed top-8 right-6"
+              src="./assets/images/icon-menu-close.svg"
+              alt="close icon"
+            />
+            <ul
+              class="flex flex-col gap-5 ml-8 fixed top-32 text-lg text-neutral-drk-gry-blue"
+            >
+              <li class="hover:text-primary-orange cursor-pointer">
+                <a href="#hero">Home</a>
+              </li>
+              <li class="hover:text-primary-orange cursor-pointer">
+                <a href="#new">New</a>
+              </li>
+              <li class="hover:text-primary-orange cursor-pointer">
+                <a href="#popular">Popular</a>
+              </li>
+              <li class="hover:text-primary-orange cursor-pointer">Trending</li>
+              <li class="hover:text-primary-orange cursor-pointer">
+                Categories
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <ul class="hidden sm:flex gap-7 text-neutral-drk-gry-blue self-center">
           <li class="hover:text-primary-orange cursor-pointer">
             <a href="#hero">Home</a>
@@ -184,5 +215,6 @@
         >JJ Vega</a
       >.
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
